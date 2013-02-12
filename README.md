@@ -1,16 +1,20 @@
-#Bamboo Slideshow Documentation
+#Drupal Bamboo Slideshow Documentation
+
+This is a slideshow Feature (module) for [Drupal 7](http://drupal.org/project/drupal) (tested with Drupal 7.19). It uses Views, Views Slideshow and Flexslider so it's responsive out of the box. 
+
+-----
 
 ##Required third party modules and libraries:
+* [Entity API](http://drupal.org/project/entity) - 7.x-1.0
+* [Entity Reference](http://drupal.org/project/entityreference) - 7.x-1.0
+* [Features](http://drupal.org/project/features) - 7.x-2.0-beta1
+* [Flexslider (module)](http://drupal.org/project/flexslider) - 7.x-2.x-dev (2013-Jan-25 or newer)
+* [Libraries api](http://drupal.org/project/libraries) - 7.x-2.0
+* [Views](http://drupal.org/project/views) - 7.x-3.5
+* [Views Slideshow](http://drupal.org/project/views_slideshow) - 7.x-3.x-dev (2012-Apr-24 or newer)
+* [Chaos tool suite (ctools)](http://drupal.org/project/ctools) - 7.x-1.2
 
-* [entity](http://drupal.org/project/entity)
-* [entityreference](http://drupal.org/project/entityreference)
-* [features](http://drupal.org/project/features)
-* [flexslider](http://drupal.org/project/flexslider)
-* [libraries](http://drupal.org/project/libraries)
-* [views](http://drupal.org/project/views)
-* [views_slideshow](http://drupal.org/project/views_slideshow)
-
-Install the third party modules above as usual. 
+Install the third party modules above as usual.
 See [Installing contributed modules (Drupal 7)](http://drupal.org/documentation/install/modules-themes/modules-7) for more info. 
 
 **Typical locations for Drupal modules:**
@@ -41,7 +45,9 @@ When you create slideshow content, there are a number of fields to be aware of.
 
 **Content Link Reference** - This option is if you would like to link your slide to another piece of existing content in your site. This option is ideal if retrofitting the slideshow to an existing site that has a lot of content.
 
-##Place the slideshow block
-The feature creates a few blocks. 
+**Page content**
+
+##Choose and Place a Slideshow Block
+The Feature creates a few blocks. 
 
 

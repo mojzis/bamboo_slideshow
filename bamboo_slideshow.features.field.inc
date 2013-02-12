@@ -43,7 +43,7 @@ function bamboo_slideshow_field_default_fields() {
       'bundle' => 'bamboo_featured',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '',
+      'description' => '<p><b>Use this field only if you will be using the "Link to Self Slideshow Block". Do not use this field if you are using the "Content Link Reference" option below.</b></p>',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -63,7 +63,7 @@ function bamboo_slideshow_field_default_fields() {
       ),
       'entity_type' => 'node',
       'field_name' => 'body',
-      'label' => 'Body',
+      'label' => 'Page Content',
       'required' => 0,
       'settings' => array(
         'better_formats' => array(
@@ -104,11 +104,11 @@ function bamboo_slideshow_field_default_fields() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'rows' => '10',
+          'rows' => '6',
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => '6',
+        'weight' => '3',
       ),
     ),
   );
@@ -161,7 +161,9 @@ function bamboo_slideshow_field_default_fields() {
       'bundle' => 'bamboo_featured',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => '<big><b>This is an internal link to another piece of content in your site. Start to type the title of a node and autocomplete will present suggestions. Use this option for the <em>"Content Reference"</em> block style.  As a default, the "Page" and "Article" content types are available for reference but you can also add your own content types by editing the field.</b></big>.',
+      'description' => '<p><b>This is an internal link to another piece of content in your site. Start to type the title of a node and autocomplete will present suggestions. Use this option for the <em>"Content Reference"</em> block style.  As a default, the "Page" and "Article" content types are available for reference but you can also add your own content types by editing the field.</b></p>
+
+<p>Do not use this field if you are using the "Page Content" field above.</p>',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -192,7 +194,7 @@ function bamboo_slideshow_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '5',
+        'weight' => '4',
       ),
     ),
   );
@@ -230,7 +232,7 @@ function bamboo_slideshow_field_default_fields() {
     'field_instance' => array(
       'bundle' => 'bamboo_featured',
       'deleted' => '0',
-      'description' => '',
+      'description' => '<p><b>Upload an image for the slideshow. Minimum size should be 960px wide by 400px high.</b></p>',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -322,7 +324,7 @@ function bamboo_slideshow_field_default_fields() {
       'bundle' => 'bamboo_featured',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'Enter some slide text. This shows up in the slideshow, not on your actual page. ',
+      'description' => '<p><b>Enter some slide text. This shows up in the slideshow only. Ideally keep this to about 100 characters in length. The slideshow truncates anything longer.</b></p>',
       'display' => array(
         'default' => array(
           'label' => 'hidden',
@@ -448,7 +450,7 @@ function bamboo_slideshow_field_default_fields() {
         'module' => 'metatags_quick',
         'settings' => array(),
         'type' => 'metatags_quick_checkboxes',
-        'weight' => '7',
+        'weight' => '5',
       ),
     ),
   );
@@ -456,10 +458,14 @@ function bamboo_slideshow_field_default_fields() {
   // Translatables
   // Included for use with string extractors like potx.
   t('(Meta)Robots');
-  t('<big><b>This is an internal link to another piece of content in your site. Start to type the title of a node and autocomplete will present suggestions. Use this option for the <em>"Content Reference"</em> block style.  As a default, the "Page" and "Article" content types are available for reference but you can also add your own content types by editing the field.</b></big>.');
-  t('Body');
+  t('<p><b>Enter some slide text. This shows up in the slideshow only. Ideally keep this to about 100 characters in length. The slideshow truncates anything longer.</b></p>');
+  t('<p><b>This is an internal link to another piece of content in your site. Start to type the title of a node and autocomplete will present suggestions. Use this option for the <em>"Content Reference"</em> block style.  As a default, the "Page" and "Article" content types are available for reference but you can also add your own content types by editing the field.</b></p>
+
+<p>Do not use this field if you are using the "Page Content" field above.</p>');
+  t('<p><b>Upload an image for the slideshow. Minimum size should be 960px wide by 400px high.</b></p>');
+  t('<p><b>Use this field only if you will be using the "Link to Self Slideshow Block". Do not use this field if you are using the "Content Link Reference" option below.</b></p>');
   t('Content Link Reference');
-  t('Enter some slide text. This shows up in the slideshow, not on your actual page. ');
+  t('Page Content');
   t('Slide Image');
   t('Slide Text');
 

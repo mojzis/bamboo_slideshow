@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Bamboo slideshow : A Drupal 7 responsive slideshow Feature" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Bamboo slideshow</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/highrockmedia/bamboo_slideshow">View on GitHub</a>
+
+          <h1 id="project_title">Bamboo slideshow</h1>
+          <h2 id="project_tagline">A Drupal 7 responsive slideshow Feature</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/highrockmedia/bamboo_slideshow/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/highrockmedia/bamboo_slideshow/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Bamboo Slideshow Documentation</h1>
+
+<h2>Required third party modules and libraries:</h2>
+
+<ul>
+<li><a href="http://drupal.org/project/entity">entity</a></li>
+<li><a href="http://drupal.org/project/entityreference">entityreference</a></li>
+<li><a href="http://drupal.org/project/features">features</a></li>
+<li><a href="http://drupal.org/project/flexslider">flexslider</a></li>
+<li><a href="http://drupal.org/project/libraries">libraries</a></li>
+<li><a href="http://drupal.org/project/views">views</a></li>
+<li><a href="http://drupal.org/project/views_slideshow">views_slideshow</a></li>
+</ul><p>Install the third party modules above as usual. 
+See <a href="http://drupal.org/documentation/install/modules-themes/modules-7">Installing contributed modules (Drupal 7)</a> for more info. </p>
+
+<p><strong>Typical locations for Drupal modules:</strong></p>
+
+<ul>
+<li><em>/sites/mysite.com/modules</em></li>
+<li><em>/sites/all/modules/contrib</em></li>
+<li><em>/sites/all/modules</em></li>
+</ul><hr><ul>
+<li>Install the Bamboo Slideshow Feature (this module) as per above or if you have a "custom" directory under /modules</li>
+<li>Install the <a href="http://flexslider.woothemes.com/">flexslider library</a> in <em>/sites/all/libraries</em>
+</li>
+</ul><p>When you activate the Bamboo slideshow module, you will be prompted to activate the dependent modules. Be sure to agree to this option to activate these dependent modules. </p>
+
+<h2>Create Slideshow Content</h2>
+
+<p>Now that you have installed everything (and hopefully it went well), create some content. </p>
+
+<p>"Content &gt; Add content &gt; Bamboo Featured" (which is the name of the new content type this module creates after activation.) Or simply go to /node/add/bamboo-featured. </p>
+
+<h3>-- Node Fields</h3>
+
+<p>When you create slideshow content, there are a number of fields to be aware of. </p>
+
+<p><strong>Title</strong> - standard Drupal title which ends up as the title of the slide. </p>
+
+<p><strong>Slide Text</strong> - This is the text displayed in under the slide. The slideshow truncates this at 110 characters so ideally you should not enter any more than that. </p>
+
+<p><strong>Content Link Reference</strong> - This option is if you would like to link your slide to another piece of existing content in your site. This option is ideal if retrofitting the slideshow to an existing site that has a lot of content.</p>
+
+<h2>Place the slideshow block</h2>
+
+<p>The feature creates a few blocks. </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Bamboo slideshow maintained by <a href="https://github.com/highrockmedia">highrockmedia</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>

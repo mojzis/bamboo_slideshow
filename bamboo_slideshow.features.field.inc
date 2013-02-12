@@ -10,8 +10,8 @@
 function bamboo_slideshow_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-featured_content-body'.
-  $fields['node-featured_content-body'] = array(
+  // Exported field: 'node-bamboo_featured-body'.
+  $fields['node-bamboo_featured-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -40,7 +40,7 @@ function bamboo_slideshow_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'featured_content',
+      'bundle' => 'bamboo_featured',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -113,8 +113,8 @@ function bamboo_slideshow_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-featured_content-field_content_link_reference'.
-  $fields['node-featured_content-field_content_link_reference'] = array(
+  // Exported field: 'node-bamboo_featured-field_content_link_reference'.
+  $fields['node-bamboo_featured-field_content_link_reference'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -158,7 +158,7 @@ function bamboo_slideshow_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'featured_content',
+      'bundle' => 'bamboo_featured',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '<big><b>This is an internal link to another piece of content in your site. Start to type the title of a node and autocomplete will present suggestions. Use this option for the <em>"Content Reference"</em> block style.  As a default, the "Page" and "Article" content types are available for reference but you can also add your own content types by editing the field.</b></big>.',
@@ -197,8 +197,8 @@ function bamboo_slideshow_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-featured_content-field_slide_image'.
-  $fields['node-featured_content-field_slide_image'] = array(
+  // Exported field: 'node-bamboo_featured-field_slide_image'.
+  $fields['node-bamboo_featured-field_slide_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -228,7 +228,7 @@ function bamboo_slideshow_field_default_fields() {
       'type' => 'image',
     ),
     'field_instance' => array(
-      'bundle' => 'featured_content',
+      'bundle' => 'bamboo_featured',
       'deleted' => '0',
       'description' => '',
       'display' => array(
@@ -291,8 +291,8 @@ function bamboo_slideshow_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-featured_content-field_slide_text'.
-  $fields['node-featured_content-field_slide_text'] = array(
+  // Exported field: 'node-bamboo_featured-field_slide_text'.
+  $fields['node-bamboo_featured-field_slide_text'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -319,7 +319,7 @@ function bamboo_slideshow_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'featured_content',
+      'bundle' => 'bamboo_featured',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Enter some slide text. This shows up in the slideshow, not on your actual page. ',
@@ -387,8 +387,8 @@ function bamboo_slideshow_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-featured_content-meta_robots'.
-  $fields['node-featured_content-meta_robots'] = array(
+  // Exported field: 'node-bamboo_featured-meta_robots'.
+  $fields['node-bamboo_featured-meta_robots'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -407,7 +407,7 @@ function bamboo_slideshow_field_default_fields() {
       'type' => 'metatags_quick',
     ),
     'field_instance' => array(
-      'bundle' => 'featured_content',
+      'bundle' => 'bamboo_featured',
       'default_value' => array(
         0 => array(
           'metatags_quick' => array(

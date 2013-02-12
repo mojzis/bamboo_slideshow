@@ -26,8 +26,8 @@ function bamboo_slideshow_views_api() {
  */
 function bamboo_slideshow_node_info() {
   $items = array(
-    'featured_content' => array(
-      'name' => t('Featured Content'),
+    'bamboo_featured' => array(
+      'name' => t('Bamboo Featured'),
       'base' => 'node_content',
       'description' => t('A custom content for displaying content in a slideshow. '),
       'has_title' => '1',

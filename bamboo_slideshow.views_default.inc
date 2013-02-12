@@ -145,7 +145,7 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'featured_content' => 'featured_content',
+    'bamboo_featured' => 'bamboo_featured',
   );
 
   /* Display: Views Preview Block */

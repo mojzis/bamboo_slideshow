@@ -1,0 +1,12 @@
+<?php
+/**
+ * @file
+ * Code for the Bamboo Slideshow feature.
+ */
+
+include_once 'bamboo_slideshow.features.inc';
+
+// Add theme CSS for slideshow.
+drupal_add_css(drupal_get_path('module', 'bamboo_slideshow') . '/css/bamboo-slideshow.css');
+
+

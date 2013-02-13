@@ -32,6 +32,7 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'slideshow';
+  $handler->display->display_options['style_options']['flexslider_views_slideshow']['optionset'] = 'bamboo_settings';
   $handler->display->display_options['style_options']['slideshow_type'] = 'flexslider_views_slideshow';
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
@@ -44,10 +45,10 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
-    'path' => 0,
     'title' => 0,
     'field_slide_image' => 0,
     'field_slide_text' => 0,
+    'view_node' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
@@ -55,10 +56,10 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
-    'path' => 0,
     'title' => 0,
     'field_slide_image' => 0,
     'field_slide_text' => 0,
+    'view_node' => 0,
   );
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['enable'] = 1;
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
@@ -278,7 +279,8 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h2';
   $handler->display->display_options['fields']['title']['element_label_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['title']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['title']['element_wrapper_class'] = 'bamboo-slideshow-title';
   $handler->display->display_options['fields']['title']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Slide Image */
@@ -304,6 +306,8 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['fields']['field_slide_text']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_slide_text']['element_type'] = 'p';
   $handler->display->display_options['fields']['field_slide_text']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_slide_text']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['field_slide_text']['element_wrapper_class'] = 'bamboo-slideshow-slide-text';
   $handler->display->display_options['fields']['field_slide_text']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_slide_text']['type'] = 'text_plain';
   /* Field: Content: Link */
@@ -314,7 +318,8 @@ function bamboo_slideshow_views_default_views() {
   $handler->display->display_options['fields']['view_node']['element_type'] = '0';
   $handler->display->display_options['fields']['view_node']['element_label_type'] = '0';
   $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['view_node']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['view_node']['element_wrapper_type'] = 'span';
+  $handler->display->display_options['fields']['view_node']['element_wrapper_class'] = 'bamboo-slideshow-read-more';
   $handler->display->display_options['fields']['view_node']['text'] = 'read more...';
   $export['featured_slideshow'] = $view;
 

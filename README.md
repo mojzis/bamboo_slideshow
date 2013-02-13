@@ -26,7 +26,9 @@ See [Installing contributed modules (Drupal 7)](http://drupal.org/documentation/
 -----
 
 * Install the Bamboo Slideshow Feature (this module) as per above or if you have a "custom" directory under /modules
-* Install the [flexslider library](http://flexslider.woothemes.com/) in */sites/all/libraries*
+* Install the [flexslider library](http://flexslider.woothemes.com/) in */sites/all/libraries*  
+
+Note that when you download flexslider, it will look like "woothemes-FlexSlider-06b12f8" or similar. You should rename this folder to "flexslider", all lower case so your final end result is */sites/all/libraries/flexslider*.
 
 When you activate the Bamboo slideshow module, you will be prompted to activate the dependent modules. Be sure to agree to this option to activate these dependent modules. 
 

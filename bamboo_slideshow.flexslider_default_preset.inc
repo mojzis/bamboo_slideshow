@@ -44,7 +44,7 @@ function bamboo_slideshow_flexslider_default_presets() {
     'move' => '0',
     'animation' => 'fade',
     'slideshow' => 1,
-    'slideshowSpeed' => '5500',
+    'slideshowSpeed' => '550000',
     'directionNav' => 1,
     'controlNav' => '1',
     'prevText' => 'Previous',

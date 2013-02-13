@@ -21,15 +21,18 @@
 }
 
 .bamboo-slideshow .bamboo-slideshow-title {
-  background: #333;
-  background: -moz-repeating-linear-gradient(#555, #333 40px);
-  background: -webkit-repeating-linear-gradient(#555, #333 60px);
-  background: -o-repeating-linear-gradient(#555, #333 40px);
-  background: -ms-repeating-linear-gradient(#555, #333 40px);
-  background: repeating-linear-gradient(#555, #333 40px);
   border-bottom: 1px dotted #fff;
   padding: .01em 0;
   display: block;
+}
+
+.bamboo-slideshow li.flexslider-views-slideshow-main-frame-row  {
+  background: #333;
+  background: -moz-repeating-linear-gradient(#555, #333 75px);
+  background: -webkit-repeating-linear-gradient(#555, #333 75px);
+  background: -o-repeating-linear-gradient(#555, #333 75px);
+  background: -ms-repeating-linear-gradient(#555, #333 75px);
+  background: repeating-linear-gradient(#555, #333 75px);
 }
 
 .bamboo-slideshow .bamboo-slideshow-title h2 {
@@ -100,14 +103,9 @@
 
 @media only screen and (min-width:300px) and (max-width:689px) {
 
-  .bamboo-slideshow .bamboo-slideshow-title h2 a {
-    background: -moz-repeating-linear-gradient(#555, #333 75px);
-    background: -webkit-repeating-linear-gradient(#555, #333 75px);
-    background: -o-repeating-linear-gradient(#555, #333 75px);
-    background: -ms-repeating-linear-gradient(#555, #333 75px);
-    background: repeating-linear-gradient(#555, #333 75px);
-    font-size: .9em;
-    line-height: 1.1em;
+  .bamboo-slideshow .bamboo-slideshow-title h2 {
+    font-size: .85em;
+    line-height: 1em;
   }
 
   .bamboo-slideshow .bamboo-slideshow-slide-text p {

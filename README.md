@@ -1,6 +1,6 @@
 #Drupal Bamboo Slideshow Documentation
 
-This is a slideshow Feature (module) for [Drupal 7](http://drupal.org/project/drupal) (tested with Drupal 7.19). It uses Views, Views Slideshow and Flexslider so it's responsive out of the box. 
+Bamboo Slideshow is a Feature (module) for [Drupal 7](http://drupal.org/project/drupal). It uses Views, Views Slideshow and Flexslider so it's responsive out of the box. You can [see a demo of it here](http://bamboo.themehuis.com/bamboo-featured-content-slideshow). Bamboo Slideshow is a companion module for the [Bamboo theme](http://drupal.org/project/bamboo) on drupal.org by [Danny Englander](http://highrockmedia.com/) ([@highrockmedia](https://twitter.com/highrockmedia)) The Feature works well with the Bamboo theme but should also work well with other Drupal 7 themes. 
 
 -----
 
@@ -43,11 +43,22 @@ When you create slideshow content, there are a number of fields to be aware of.
 
 **Slide Text** - This is the text displayed in under the slide. The slideshow truncates this at 110 characters so ideally you should not enter any more than that. 
 
-**Content Link Reference** - This option is if you would like to link your slide to another piece of existing content in your site. This option is ideal if retrofitting the slideshow to an existing site that has a lot of content.
+**Content Link Reference** - This field option is if you would like to link your slide to another piece of existing content in your site. This option is ideal if retrofitting the slideshow to an existing site that has a lot of content. For this option, use the **View: Featured Slideshow: Content Reference Slideshow Block** on the blocks admin page. 
 
-**Page content**
+**Page content** -- This field option is if you would like to have your slideshow linked to the origin node itself. For this option, use the **View: Featured Slideshow: Link-to-self Slideshow Block** on the blocks admin page. 
+
 
 ##Choose and Place a Slideshow Block
-The Feature creates a few blocks. 
+The Feature creates two blocks as mentioned above. You can see these on the blocks admin page or at */admin/structure/block*
+
+1. **View: Featured Slideshow: Link-to-self Slideshow Block**
+2. **View: Featured Slideshow: Content Reference Slideshow Block**
+
+Use the first block if you are using the **Page Content field**, use the second block if you are using the **Content Link Reference** option. See "Node Fields" above for more info. Ideally you want to place this in a block region that is a full width of your theme. In the Bamboo theme, the region is called "Hero 1"
+
+
+##Support
+This Feature is free and licensed under GPL. However, if you require support, I can offer this on a paid basis either hourly or per project. Please do not open an issue for this in the Bamboo issue queue on drupal.org, [contact me directly](http://highrockmedia.com/contact-us). 
+
 
 
